@@ -54,3 +54,6 @@
       %div
         %h3 Latest subscribers
         = render partial: 'admin/subscriptions/index', locals: { subscribers: @subscribers }
+      %div
+        %h3 Subscriber trends
+        = line_chart @chart_data

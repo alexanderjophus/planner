@@ -113,3 +113,5 @@ end
 
 gem 'rollbar'
 gem 'skylight'
+
+gem "chartkick", "~> 5.1"

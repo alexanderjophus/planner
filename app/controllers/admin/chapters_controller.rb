@@ -27,6 +27,7 @@ class Admin::ChaptersController < Admin::ApplicationController
     @sponsors = @chapter.sponsors.uniq
     @groups = @chapter.groups
     @subscribers = @chapter.subscriptions.last(20).reverse
+    @chart_data = @chapter.subscriptions.collect(&:created_at)
   end
 
   def edit
